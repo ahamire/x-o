@@ -1,3 +1,54 @@
+html,body{
+  background-color: #242424;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background-size: cover;
+}
 body{
-    background-color: rgb(200, 255, 0);
+  height: 100vh;
+}
+main{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name{
+  font: 4em sans-serif;
+  color: sandybrown;
+}
+.field{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+  justify-content: center;
+  align-items: center;
+}
+.winner{
+  font: 3em sans-serif;
+}
+.square{
+  height: 100px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  border-left: rgb(113, 109, 109) solid;
+  border-top:  rgb(113, 109, 109) solid;
+  font: 3em sans-serif;
+}
+.sq{
+  border-top: none;
+}
+.s1{
+  border-left: none;
+}
+.restart{
+ background-color: rgb(113, 109, 109);
+ border-color: rgb(113, 109, 109);
+ border-radius: 20px;
+ margin-top: 50px;
+ color: white;
+ font: 3em sans-serif;
 }
